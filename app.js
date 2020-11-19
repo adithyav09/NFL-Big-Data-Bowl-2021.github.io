@@ -1,207 +1,119 @@
-data = d3.csvParse(await FileAttachment("barRaceData.csv").text(), d3.autoType)
+d3.csv('barRaceData.csv').then(csvData => {
 
-// viewof replay = html `<button>Replay`;
+    teams = [];
+    scores = [];
 
-chart = {
-    // replay;
-    const hello = 1;
-    const svg = d3.create("svg")
-        .attr("viewBox", [0, 0, width, height]);
+    year2015 = [];
+    year2016 = [];
+    year2017 = [];
+    year2018 = [];
+    year2019 = [];
+    year2020 = [];
 
-    const updateBars = bars(svg);
-    const updateAxis = axis(svg);
-    const updateLabels = labels(svg);
-    const updateTicker = ticker(svg);
+    winner2015 = [];
+    winner2016 = [];
+    winner2017 = [];
+    winner2018 = [];
+    winner2019 = [];
+    winner2020 = [];
 
-    yield svg.node();
+    data = csvData;
+    dates = data.map(obj => obj.datetime);
+    winner = data.map(obj => obj.TEAM);
+    winner.forEach(team => {
+        if (!teams.includes(team)) {
+            teams.push(team);
+            scores.push(0);
+        };
+    });
 
-    for (const keyframe of keyframes) {
-        const transition = svg.transition()
-            .duration(duration)
-            .ease(d3.easeLinear);
-
-        // Extract the top bar’s value.
-        x.domain([0, keyframe[1][0].value]);
-
-        updateAxis(keyframe, transition);
-        updateBars(keyframe, transition);
-        updateLabels(keyframe, transition);
-        updateTicker(keyframe, transition);
-
-        invalidation.then(() => svg.interrupt());
-        await transition.end();
-    }
-}
-
-duration = 250
-
-data
-
-d3.group(data, d => d.name)
-
-data.filter(d => d.name === "Heineken")
-
-n = 12
-
-names = new Set(data.map(d => d.name))
-
-datevalues = Array.from(d3.rollup(data, ([d]) => d.value, d => +d.date, d => d.name))
-    .map(([date, data]) => [new Date(date), data])
-    .sort(([a], [b]) => d3.ascending(a, b))
-
-function rank(value) {
-    const data = Array.from(names, name => ({ name, value: value(name) }));
-    data.sort((a, b) => d3.descending(a.value, b.value));
-    for (let i = 0; i < data.length; ++i) data[i].rank = Math.min(n, i);
-    return data;
-}
-
-rank(name => datevalues[0][1].get(name))
-
-k = 10
-
-keyframes = {
-    const keyframes = [];
-    let ka, a, kb, b;
-    for ([
-            [ka, a],
-            [kb, b]
-        ] of d3.pairs(datevalues)) {
-        for (let i = 0; i < k; ++i) {
-            const t = i / k;
-            keyframes.push([
-                new Date(ka * (1 - t) + kb * t),
-                rank(name => (a.get(name) || 0) * (1 - t) + (b.get(name) || 0) * t)
-            ]);
+    for (let i = 0; i < dates.length; i++) {
+        if (dates[i][3] === '5') {
+            year2015.push(dates[i]);
+            winner2015.push(winner[i]);
+        } else if (dates[i][3] === '6') {
+            year2016.push(dates[i]);
+            winner2016.push(winner[i]);
+        } else if (dates[i][3] === '7') {
+            year2017.push(dates[i]);
+            winner2017.push(winner[i]);
+        } else if (dates[i][3] === '8') {
+            year2018.push(dates[i]);
+            winner2018.push(winner[i]);
+        } else if (dates[i][3] === '9') {
+            year2019.push(dates[i]);
+            winner2019.push(winner[i]);
+        } else {
+            year2020.push(dates[i]);
+            winner2020.push(winner[i]);
         }
+    };
+    console.log(winner2020);
+
+    var yearSelect = {
+        '2015': [year2015, winner2015, 'rgb(158,202,225)'],
+        '2016': [year2016, winner2016, 'rgb(100,202,225)'],
+        '2017': [year2017, winner2017, 'rgb(50,202,225)'],
+        '2018': [year2018, winner2018, 'rgb(0,202,225)'],
+        '2019': [year2019, winner2019, 'rgb(200,202,225)'],
+        '2020': [year2020, winner2020, 'rgb(250,202,225)']
     }
-    keyframes.push([new Date(kb), rank(name => b.get(name) || 0)]);
-    return keyframes;
-}
 
-nameframes = d3.groups(keyframes.flatMap(([, data]) => data), d => d.name)
+    count = 0;
 
-prev = new Map(nameframes.flatMap(([, data]) => d3.pairs(data, (a, b) => [b, a])))
+    function getYear(year) {
+        var select = yearSelect[year];
+        for (let i = 0; i < select[0].length; i++) {
+            setTimeout(function() {
+                scores[teams.indexOf(select[1][i])] += 1;
 
-next = new Map(nameframes.flatMap(([, data]) => d3.pairs(data)))
+                var trace1 = {
+                    x: scores,
+                    // y: teams, //number of wins in season
+                    type: 'bar',
+                    orientation: 'h',
+                    text: teams,
+                    textposition: 'auto',
+                    hoverinfo: 'none',
+                    marker: {
+                        color: select[2],
+                        opacity: 0.6,
+                        line: {
+                            color: select[2],
+                            width: 1.5
+                        }
+                    }
+                };
 
-function bars(svg) {
-    let bar = svg.append("g")
-        .attr("fill-opacity", 0.6)
-        .selectAll("rect");
+                var data = [trace1];
 
-    return ([date, data], transition) => bar = bar
-        .data(data.slice(0, n), d => d.name)
-        .join(
-            enter => enter.append("rect")
-            .attr("fill", color)
-            .attr("height", y.bandwidth())
-            .attr("x", x(0))
-            .attr("y", d => y((prev.get(d) || d).rank))
-            .attr("width", d => x((prev.get(d) || d).value) - x(0)),
-            update => update,
-            exit => exit.transition(transition).remove()
-            .attr("y", d => y((next.get(d) || d).rank))
-            .attr("width", d => x((next.get(d) || d).value) - x(0))
-        )
-        .call(bar => bar.transition(transition)
-            .attr("y", d => y(d.rank))
-            .attr("width", d => x(d.value) - x(0)));
-}
+                var layout = {
+                    barmode: 'stack',
+                    autosize: false,
+                    width: 1200,
+                    height: 1200,
+                    margin: {
+                        l: 50,
+                        r: 50,
+                        b: 100,
+                        t: 100,
+                        pad: 4
+                    }
+                };
 
-function labels(svg) {
-    let label = svg.append("g")
-        .style("font", "bold 12px var(--sans-serif)")
-        .style("font-variant-numeric", "tabular-nums")
-        .attr("text-anchor", "end")
-        .selectAll("text");
+                Plotly.newPlot('myDiv', data, layout);
 
-    return ([date, data], transition) => label = label
-        .data(data.slice(0, n), d => d.name)
-        .join(
-            enter => enter.append("text")
-            .attr("transform", d => `translate(${x((prev.get(d) || d).value)},${y((prev.get(d) || d).rank)})`)
-            .attr("y", y.bandwidth() / 2)
-            .attr("x", -6)
-            .attr("dy", "-0.25em")
-            .text(d => d.name)
-            .call(text => text.append("tspan")
-                .attr("fill-opacity", 0.7)
-                .attr("font-weight", "normal")
-                .attr("x", -6)
-                .attr("dy", "1.15em")),
-            update => update,
-            exit => exit.transition(transition).remove()
-            .attr("transform", d => `translate(${x((next.get(d) || d).value)},${y((next.get(d) || d).rank)})`)
-            .call(g => g.select("tspan").tween("text", d => textTween(d.value, (next.get(d) || d).value)))
-        )
-        .call(bar => bar.transition(transition)
-            .attr("transform", d => `translate(${x(d.value)},${y(d.rank)})`)
-            .call(g => g.select("tspan").tween("text", d => textTween((prev.get(d) || d).value, d.value))))
-}
-
-function textTween(a, b) {
-    const i = d3.interpolateNumber(a, b);
-    return function(t) {
-        this.textContent = formatNumber(i(t));
-    };
-}
-
-formatNumber = d3.format(",d")
-
-function axis(svg) {
-    const g = svg.append("g")
-        .attr("transform", `translate(0,${margin.top})`);
-
-    const axis = d3.axisTop(x)
-        .ticks(width / 160)
-        .tickSizeOuter(0)
-        .tickSizeInner(-barSize * (n + y.padding()));
-
-    return (_, transition) => {
-        g.transition(transition).call(axis);
-        g.select(".tick:first-of-type text").remove();
-        g.selectAll(".tick:not(:first-of-type) line").attr("stroke", "white");
-        g.select(".domain").remove();
-    };
-}
-
-function ticker(svg) {
-    const now = svg.append("text")
-        .style("font", `bold ${barSize}px var(--sans-serif)`)
-        .style("font-variant-numeric", "tabular-nums")
-        .attr("text-anchor", "end")
-        .attr("x", width - 6)
-        .attr("y", margin.top + barSize * (n - 0.45))
-        .attr("dy", "0.32em")
-        .text(formatDate(keyframes[0][0]));
-
-    return ([date], transition) => {
-        transition.end().then(() => now.text(formatDate(date)));
-    };
-}
-
-color = {
-    const scale = d3.scaleOrdinal(d3.schemeTableau10);
-    if (data.some(d => d.category !== undefined)) {
-        const categoryByName = new Map(data.map(d => [d.name, d.category]))
-        scale.domain(Array.from(categoryByName.values()));
-        return d => scale(categoryByName.get(d.name));
+            }, 250)
+        };
     }
-    return d => scale(d.name);
-}
+    getYear('2015');
+    d3.select('#list').on("change", function(event) {
+        getYear(this.value);
+    })
 
-x = d3.scaleLinear([0, 1], [margin.left, width - margin.right])
-
-y = d3.scaleBand()
-    .domain(d3.range(n + 1))
-    .rangeRound([margin.top, margin.top + barSize * (n + 1 + 0.1)])
-    .padding(0.1)
-
-height = margin.top + barSize * n + margin.bottom
-
-barSize = 48
-
-margin = ({ top: 16, right: 6, bottom: 6, left: 0 })
-
-d3 = require("d3@6")
+    // function getSelectValue() {
+    //     var selectedValue = document.getElementById("list").value;
+    //     console.log(selectedValue);
+    //     getYear(selectedValue);
+    // }
+});
