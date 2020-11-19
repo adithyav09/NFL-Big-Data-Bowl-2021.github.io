@@ -1,0 +1,247 @@
+﻿Year,Week2,Day,Date,Time,FINAL_TEAM_NAME,Opponent,TEAM_POINTS,TEAM_YARDS,TEAM_TURNOVERS,TEAM_TURNOVER_DIFFERENTIAL,TEAM_POINT_MARGIN,OPPONENTS_POINTS,OPPONENTS_YARDS,OPPONENTS_TURNOVERS,OPPONENTS_TURNOVER_DIFFERENTIAL,GAMEID,BINARY_WIN,Home_Team
+2020,10,Thu,12-Nov,8:20PM,Indianapolis Colts,Tennessee Titans,34,430,0,0,17,17,294,0,0,2501,1,0
+2020,10,Sun,15-Nov,1:00PM,Green Bay Packers,Jacksonville Jaguars,24,395,2,-1,4,20,260,1,1,2502,1,1
+2020,10,Sun,15-Nov,1:00PM,Detroit Lions,Washington Football Team,30,372,0,1,3,27,464,1,-1,2503,1,1
+2020,10,Sun,15-Nov,1:00PM,Cleveland Browns,Houston Texans,10,356,0,0,3,7,243,0,0,2504,1,1
+2020,10,Sun,15-Nov,1:00PM,Tampa Bay Buccaneers,Carolina Panthers,46,544,1,0,23,23,187,1,0,2505,1,0
+2020,10,Sun,15-Nov,1:00PM,New York Giants,Philadelphia Eagles,27,382,0,0,10,17,346,0,0,2506,1,1
+2020,10,Sun,15-Nov,4:05PM,Miami Dolphins,Los Angeles Chargers,29,280,1,0,8,21,273,1,0,2507,1,1
+2020,10,Sun,15-Nov,4:05PM,Las Vegas Raiders,Denver Broncos,37,357,0,5,25,12,313,5,-5,2508,1,1
+2020,10,Sun,15-Nov,4:05PM,Arizona Cardinals,Buffalo Bills,32,453,2,0,2,30,369,2,0,2509,1,1
+2020,10,Sun,15-Nov,4:25PM,New Orleans Saints,San Francisco 49ers,27,237,2,2,14,13,281,4,-2,2510,1,1
+2020,10,Sun,15-Nov,4:25PM,Pittsburgh Steelers,Cincinnati Bengals,36,377,0,2,26,10,324,2,-2,2511,1,1
+2020,10,Sun,15-Nov,4:25PM,Los Angeles Rams,Seattle Seahawks,23,389,1,2,7,16,333,3,-2,2512,1,1
+2020,10,Sun,15-Nov,8:20PM,New England Patriots,Baltimore Ravens,23,308,0,1,6,17,357,1,-1,2513,1,1
+2020,10,Mon,16-Nov,8:15PM,Minnesota Vikings,Chicago Bears,19,385,2,0,6,13,149,2,0,2514,1,0
+2020,10,Thu,12-Nov,8:20PM,Tennessee Titans,Indianapolis Colts,17,294,0,0,-17,34,430,0,0,2501,0,1
+2020,10,Sun,15-Nov,1:00PM,Jacksonville Jaguars,Green Bay Packers,20,260,1,1,-4,24,395,2,-1,2502,0,0
+2020,10,Sun,15-Nov,1:00PM,Washington Football Team,Detroit Lions,27,464,1,-1,-3,30,372,0,1,2503,0,0
+2020,10,Sun,15-Nov,1:00PM,Houston Texans,Cleveland Browns,7,243,0,0,-3,10,356,0,0,2504,0,0
+2020,10,Sun,15-Nov,1:00PM,Carolina Panthers,Tampa Bay Buccaneers,23,187,1,0,-23,46,544,1,0,2505,0,1
+2020,10,Sun,15-Nov,1:00PM,Philadelphia Eagles,New York Giants,17,346,0,0,-10,27,382,0,0,2506,0,0
+2020,10,Sun,15-Nov,4:05PM,Los Angeles Chargers,Miami Dolphins,21,273,1,0,-8,29,280,1,0,2507,0,0
+2020,10,Sun,15-Nov,4:05PM,Denver Broncos,Las Vegas Raiders,12,313,5,-5,-25,37,357,0,5,2508,0,0
+2020,10,Sun,15-Nov,4:05PM,Buffalo Bills,Arizona Cardinals,30,369,2,0,-2,32,453,2,0,2509,0,0
+2020,10,Sun,15-Nov,4:25PM,San Francisco 49ers,New Orleans Saints,13,281,4,-2,-14,27,237,2,2,2510,0,0
+2020,10,Sun,15-Nov,4:25PM,Cincinnati Bengals,Pittsburgh Steelers,10,324,2,-2,-26,36,377,0,2,2511,0,0
+2020,10,Sun,15-Nov,4:25PM,Seattle Seahawks,Los Angeles Rams,16,333,3,-2,-7,23,389,1,2,2512,0,0
+2020,10,Sun,15-Nov,8:20PM,Baltimore Ravens,New England Patriots,17,357,1,-1,-6,23,308,0,1,2513,0,0
+2020,10,Mon,16-Nov,8:15PM,Chicago Bears,Minnesota Vikings,13,149,2,0,-6,19,385,2,0,2514,0,1
+2020,11,Thu,19-Nov,8:20PM,Arizona Cardinals,Seattle Seahawks,,,,,,,,,,2515,,0
+2020,11,Sun,22-Nov,1:00PM,Atlanta Falcons,New Orleans Saints,,,,,,,,,,2516,,0
+2020,11,Sun,22-Nov,1:00PM,Pittsburgh Steelers,Jacksonville Jaguars,,,,,,,,,,2517,,0
+2020,11,Sun,22-Nov,1:00PM,Detroit Lions,Carolina Panthers,,,,,,,,,,2518,,0
+2020,11,Sun,22-Nov,1:00PM,Cincinnati Bengals,Washington Football Team,,,,,,,,,,2519,,0
+2020,11,Sun,22-Nov,1:00PM,New England Patriots,Houston Texans,,,,,,,,,,2520,,0
+2020,11,Sun,22-Nov,1:00PM,Philadelphia Eagles,Cleveland Browns,,,,,,,,,,2521,,0
+2020,11,Sun,22-Nov,1:00PM,Tennessee Titans,Baltimore Ravens,,,,,,,,,,2522,,0
+2020,11,Sun,22-Nov,4:05PM,Miami Dolphins,Denver Broncos,,,,,,,,,,2523,,0
+2020,11,Sun,22-Nov,4:05PM,New York Jets,Los Angeles Chargers,,,,,,,,,,2524,,0
+2020,11,Sun,22-Nov,4:25PM,Green Bay Packers,Indianapolis Colts,,,,,,,,,,2525,,0
+2020,11,Sun,22-Nov,4:25PM,Dallas Cowboys,Minnesota Vikings,,,,,,,,,,2526,,0
+2020,11,Sun,22-Nov,8:20PM,Kansas City Chiefs,Las Vegas Raiders,,,,,,,,,,2527,,0
+2020,11,Mon,23-Nov,8:15PM,Los Angeles Rams,Tampa Bay Buccaneers,,,,,,,,,,2528,,0
+2020,12,Thu,26-Nov,12:30PM,Houston Texans,Detroit Lions,,,,,,,,,,2529,,0
+2020,12,Thu,26-Nov,4:30PM,Washington Football Team,Dallas Cowboys,,,,,,,,,,2530,,0
+2020,12,Thu,26-Nov,8:20PM,Baltimore Ravens,Pittsburgh Steelers,,,,,,,,,,2531,,0
+2020,12,Sun,29-Nov,1:00PM,Las Vegas Raiders,Atlanta Falcons,,,,,,,,,,2532,,0
+2020,12,Sun,29-Nov,1:00PM,Cleveland Browns,Jacksonville Jaguars,,,,,,,,,,2533,,0
+2020,12,Sun,29-Nov,1:00PM,New York Giants,Cincinnati Bengals,,,,,,,,,,2534,,0
+2020,12,Sun,29-Nov,1:00PM,Carolina Panthers,Minnesota Vikings,,,,,,,,,,2535,,0
+2020,12,Sun,29-Nov,1:00PM,Arizona Cardinals,New England Patriots,,,,,,,,,,2536,,0
+2020,12,Sun,29-Nov,1:00PM,Miami Dolphins,New York Jets,,,,,,,,,,2537,,0
+2020,12,Sun,29-Nov,1:00PM,Los Angeles Chargers,Buffalo Bills,,,,,,,,,,2538,,0
+2020,12,Sun,29-Nov,1:00PM,Tennessee Titans,Indianapolis Colts,,,,,,,,,,2539,,0
+2020,12,Sun,29-Nov,4:05PM,New Orleans Saints,Denver Broncos,,,,,,,,,,2540,,0
+2020,12,Sun,29-Nov,4:05PM,San Francisco 49ers,Los Angeles Rams,,,,,,,,,,2541,,0
+2020,12,Sun,29-Nov,4:25PM,Kansas City Chiefs,Tampa Bay Buccaneers,,,,,,,,,,2542,,0
+2020,12,Sun,29-Nov,8:20PM,Chicago Bears,Green Bay Packers,,,,,,,,,,2543,,0
+2020,12,Mon,30-Nov,8:15PM,Seattle Seahawks,Philadelphia Eagles,,,,,,,,,,2544,,0
+2020,13,Thu,3-Dec,8:20PM,Dallas Cowboys,Baltimore Ravens,,,,,,,,,,2545,,0
+2020,13,Sun,6-Dec,1:00PM,Washington Football Team,Pittsburgh Steelers,,,,,,,,,,2546,,0
+2020,13,Sun,6-Dec,1:00PM,New Orleans Saints,Atlanta Falcons,,,,,,,,,,2547,,0
+2020,13,Sun,6-Dec,1:00PM,Jacksonville Jaguars,Minnesota Vikings,,,,,,,,,,2548,,0
+2020,13,Sun,6-Dec,1:00PM,Las Vegas Raiders,New York Jets,,,,,,,,,,2549,,0
+2020,13,Sun,6-Dec,1:00PM,Cleveland Browns,Tennessee Titans,,,,,,,,,,2550,,0
+2020,13,Sun,6-Dec,1:00PM,Detroit Lions,Chicago Bears,,,,,,,,,,2551,,0
+2020,13,Sun,6-Dec,1:00PM,Cincinnati Bengals,Miami Dolphins,,,,,,,,,,2552,,0
+2020,13,Sun,6-Dec,1:00PM,Indianapolis Colts,Houston Texans,,,,,,,,,,2553,,0
+2020,13,Sun,6-Dec,4:05PM,New York Giants,Seattle Seahawks,,,,,,,,,,2554,,0
+2020,13,Sun,6-Dec,4:05PM,Los Angeles Rams,Arizona Cardinals,,,,,,,,,,2555,,0
+2020,13,Sun,6-Dec,4:25PM,New England Patriots,Los Angeles Chargers,,,,,,,,,,2556,,0
+2020,13,Sun,6-Dec,4:25PM,Philadelphia Eagles,Green Bay Packers,,,,,,,,,,2557,,0
+2020,13,Sun,6-Dec,8:20PM,Denver Broncos,Kansas City Chiefs,,,,,,,,,,2558,,0
+2020,13,Mon,7-Dec,8:15PM,Buffalo Bills,San Francisco 49ers,,,,,,,,,,2559,,0
+2020,14,Thu,10-Dec,8:20PM,New England Patriots,Los Angeles Rams,,,,,,,,,,2560,,0
+2020,14,Sun,13-Dec,1:00PM,Tennessee Titans,Jacksonville Jaguars,,,,,,,,,,2561,,0
+2020,14,Sun,13-Dec,1:00PM,Denver Broncos,Carolina Panthers,,,,,,,,,,2562,,0
+2020,14,Sun,13-Dec,1:00PM,Kansas City Chiefs,Miami Dolphins,,,,,,,,,,2563,,0
+2020,14,Sun,13-Dec,1:00PM,Green Bay Packers,Detroit Lions,,,,,,,,,,2564,,0
+2020,14,Sun,13-Dec,1:00PM,Minnesota Vikings,Tampa Bay Buccaneers,,,,,,,,,,2565,,0
+2020,14,Sun,13-Dec,1:00PM,Dallas Cowboys,Cincinnati Bengals,,,,,,,,,,2566,,0
+2020,14,Sun,13-Dec,1:00PM,Arizona Cardinals,New York Giants,,,,,,,,,,2567,,0
+2020,14,Sun,13-Dec,1:00PM,Houston Texans,Chicago Bears,,,,,,,,,,2568,,0
+2020,14,Sun,13-Dec,4:05PM,Indianapolis Colts,Las Vegas Raiders,,,,,,,,,,2569,,0
+2020,14,Sun,13-Dec,4:05PM,New York Jets,Seattle Seahawks,,,,,,,,,,2570,,0
+2020,14,Sun,13-Dec,4:25PM,Washington Football Team,San Francisco 49ers,,,,,,,,,,2571,,0
+2020,14,Sun,13-Dec,4:25PM,New Orleans Saints,Philadelphia Eagles,,,,,,,,,,2572,,0
+2020,14,Sun,13-Dec,4:25PM,Atlanta Falcons,Los Angeles Chargers,,,,,,,,,,2573,,0
+2020,14,Sun,13-Dec,8:20PM,Pittsburgh Steelers,Buffalo Bills,,,,,,,,,,2574,,0
+2020,14,Mon,14-Dec,8:15PM,Baltimore Ravens,Cleveland Browns,,,,,,,,,,2575,,0
+2020,15,Thu,17-Dec,8:20PM,Los Angeles Chargers,Las Vegas Raiders,,,,,,,,,,2576,,0
+2020,15,Sun,20-Dec,1:00PM,Houston Texans,Indianapolis Colts,,,,,,,,,,2577,,0
+2020,15,Sun,20-Dec,1:00PM,Buffalo Bills,Denver Broncos,,,,,,,,,,2578,,0
+2020,15,Sun,20-Dec,1:00PM,New England Patriots,Miami Dolphins,,,,,,,,,,2579,,0
+2020,15,Sun,20-Dec,1:00PM,Chicago Bears,Minnesota Vikings,,,,,,,,,,2580,,0
+2020,15,Sun,20-Dec,1:00PM,New York Jets,Los Angeles Rams,,,,,,,,,,2581,,0
+2020,15,Sun,20-Dec,1:00PM,Jacksonville Jaguars,Baltimore Ravens,,,,,,,,,,2582,,0
+2020,15,Sun,20-Dec,1:00PM,Tampa Bay Buccaneers,Atlanta Falcons,,,,,,,,,,2583,,0
+2020,15,Sun,20-Dec,1:00PM,Seattle Seahawks,Washington Football Team,,,,,,,,,,2584,,0
+2020,15,Sun,20-Dec,1:00PM,Cleveland Browns,New York Giants,,,,,,,,,,2585,,0
+2020,15,Sun,20-Dec,1:00PM,Carolina Panthers,Green Bay Packers,,,,,,,,,,2586,,0
+2020,15,Sun,20-Dec,1:00PM,Detroit Lions,Tennessee Titans,,,,,,,,,,2587,,0
+2020,15,Sun,20-Dec,4:05PM,Philadelphia Eagles,Arizona Cardinals,,,,,,,,,,2588,,0
+2020,15,Sun,20-Dec,4:25PM,Kansas City Chiefs,New Orleans Saints,,,,,,,,,,2589,,0
+2020,15,Sun,20-Dec,8:20PM,San Francisco 49ers,Dallas Cowboys,,,,,,,,,,2590,,0
+2020,15,Mon,21-Dec,8:15PM,Pittsburgh Steelers,Cincinnati Bengals,,,,,,,,,,2591,,0
+2020,16,Fri,25-Dec,4:30PM,Minnesota Vikings,New Orleans Saints,,,,,,,,,,2592,,0
+2020,16,Sun,27-Dec,1:00AM,San Francisco 49ers,Arizona Cardinals,,,,,,,,,,2593,,0
+2020,16,Sun,27-Dec,1:00PM,Indianapolis Colts,Pittsburgh Steelers,,,,,,,,,,2594,,0
+2020,16,Sun,27-Dec,1:00PM,Denver Broncos,Los Angeles Chargers,,,,,,,,,,2595,,0
+2020,16,Sun,27-Dec,1:00PM,Chicago Bears,Jacksonville Jaguars,,,,,,,,,,2596,,0
+2020,16,Sun,27-Dec,1:00PM,Atlanta Falcons,Kansas City Chiefs,,,,,,,,,,2597,,0
+2020,16,Sun,27-Dec,1:00PM,Tampa Bay Buccaneers,Detroit Lions,,,,,,,,,,2598,,0
+2020,16,Sun,27-Dec,1:00PM,Cleveland Browns,New York Jets,,,,,,,,,,2599,,0
+2020,16,Sun,27-Dec,1:00PM,New York Giants,Baltimore Ravens,,,,,,,,,,2600,,0
+2020,16,Sun,27-Dec,1:00PM,Carolina Panthers,Washington Football Team,,,,,,,,,,2601,,0
+2020,16,Sun,27-Dec,1:00PM,Miami Dolphins,Las Vegas Raiders,,,,,,,,,,2602,,0
+2020,16,Sun,27-Dec,1:00PM,Cincinnati Bengals,Houston Texans,,,,,,,,,,2603,,0
+2020,16,Sun,27-Dec,4:05PM,Los Angeles Rams,Seattle Seahawks,,,,,,,,,,2604,,0
+2020,16,Sun,27-Dec,4:25PM,Philadelphia Eagles,Dallas Cowboys,,,,,,,,,,2605,,0
+2020,16,Sun,27-Dec,8:20PM,Tennessee Titans,Green Bay Packers,,,,,,,,,,2606,,0
+2020,16,Mon,28-Dec,8:15PM,Buffalo Bills,New England Patriots,,,,,,,,,,2607,,0
+2020,17,Sun,3-Jan,1:00PM,Miami Dolphins,Buffalo Bills,,,,,,,,,,2608,,0
+2020,17,Sun,3-Jan,1:00PM,Los Angeles Chargers,Kansas City Chiefs,,,,,,,,,,2609,,0
+2020,17,Sun,3-Jan,1:00PM,Washington Football Team,Philadelphia Eagles,,,,,,,,,,2610,,0
+2020,17,Sun,3-Jan,1:00PM,New Orleans Saints,Carolina Panthers,,,,,,,,,,2611,,0
+2020,17,Sun,3-Jan,1:00PM,Tennessee Titans,Houston Texans,,,,,,,,,,2612,,0
+2020,17,Sun,3-Jan,1:00PM,Green Bay Packers,Chicago Bears,,,,,,,,,,2613,,0
+2020,17,Sun,3-Jan,1:00PM,New York Jets,New England Patriots,,,,,,,,,,2614,,0
+2020,17,Sun,3-Jan,1:00PM,Baltimore Ravens,Cincinnati Bengals,,,,,,,,,,2615,,0
+2020,17,Sun,3-Jan,1:00PM,Jacksonville Jaguars,Indianapolis Colts,,,,,,,,,,2616,,0
+2020,17,Sun,3-Jan,1:00PM,Minnesota Vikings,Detroit Lions,,,,,,,,,,2617,,0
+2020,17,Sun,3-Jan,1:00PM,Atlanta Falcons,Tampa Bay Buccaneers,,,,,,,,,,2618,,0
+2020,17,Sun,3-Jan,1:00PM,Dallas Cowboys,New York Giants,,,,,,,,,,2619,,0
+2020,17,Sun,3-Jan,1:00PM,Pittsburgh Steelers,Cleveland Browns,,,,,,,,,,2620,,0
+2020,17,Sun,3-Jan,4:25PM,Arizona Cardinals,Los Angeles Rams,,,,,,,,,,2621,,0
+2020,17,Sun,3-Jan,4:25PM,Las Vegas Raiders,Denver Broncos,,,,,,,,,,2622,,0
+2020,17,Sun,3-Jan,4:25PM,Seattle Seahawks,San Francisco 49ers,,,,,,,,,,2623,,0
+2020,11,Thu,19-Nov,8:20PM,Seattle Seahawks,Arizona Cardinals,,,,,,,,,,2515,,1
+2020,11,Sun,22-Nov,1:00PM,New Orleans Saints,Atlanta Falcons,,,,,,,,,,2516,,1
+2020,11,Sun,22-Nov,1:00PM,Jacksonville Jaguars,Pittsburgh Steelers,,,,,,,,,,2517,,1
+2020,11,Sun,22-Nov,1:00PM,Carolina Panthers,Detroit Lions,,,,,,,,,,2518,,1
+2020,11,Sun,22-Nov,1:00PM,Washington Football Team,Cincinnati Bengals,,,,,,,,,,2519,,1
+2020,11,Sun,22-Nov,1:00PM,Houston Texans,New England Patriots,,,,,,,,,,2520,,1
+2020,11,Sun,22-Nov,1:00PM,Cleveland Browns,Philadelphia Eagles,,,,,,,,,,2521,,1
+2020,11,Sun,22-Nov,1:00PM,Baltimore Ravens,Tennessee Titans,,,,,,,,,,2522,,1
+2020,11,Sun,22-Nov,4:05PM,Denver Broncos,Miami Dolphins,,,,,,,,,,2523,,1
+2020,11,Sun,22-Nov,4:05PM,Los Angeles Chargers,New York Jets,,,,,,,,,,2524,,1
+2020,11,Sun,22-Nov,4:25PM,Indianapolis Colts,Green Bay Packers,,,,,,,,,,2525,,1
+2020,11,Sun,22-Nov,4:25PM,Minnesota Vikings,Dallas Cowboys,,,,,,,,,,2526,,1
+2020,11,Sun,22-Nov,8:20PM,Las Vegas Raiders,Kansas City Chiefs,,,,,,,,,,2527,,1
+2020,11,Mon,23-Nov,8:15PM,Tampa Bay Buccaneers,Los Angeles Rams,,,,,,,,,,2528,,1
+2020,12,Thu,26-Nov,12:30PM,Detroit Lions,Houston Texans,,,,,,,,,,2529,,1
+2020,12,Thu,26-Nov,4:30PM,Dallas Cowboys,Washington Football Team,,,,,,,,,,2530,,1
+2020,12,Thu,26-Nov,8:20PM,Pittsburgh Steelers,Baltimore Ravens,,,,,,,,,,2531,,1
+2020,12,Sun,29-Nov,1:00PM,Atlanta Falcons,Las Vegas Raiders,,,,,,,,,,2532,,1
+2020,12,Sun,29-Nov,1:00PM,Jacksonville Jaguars,Cleveland Browns,,,,,,,,,,2533,,1
+2020,12,Sun,29-Nov,1:00PM,Cincinnati Bengals,New York Giants,,,,,,,,,,2534,,1
+2020,12,Sun,29-Nov,1:00PM,Minnesota Vikings,Carolina Panthers,,,,,,,,,,2535,,1
+2020,12,Sun,29-Nov,1:00PM,New England Patriots,Arizona Cardinals,,,,,,,,,,2536,,1
+2020,12,Sun,29-Nov,1:00PM,New York Jets,Miami Dolphins,,,,,,,,,,2537,,1
+2020,12,Sun,29-Nov,1:00PM,Buffalo Bills,Los Angeles Chargers,,,,,,,,,,2538,,1
+2020,12,Sun,29-Nov,1:00PM,Indianapolis Colts,Tennessee Titans,,,,,,,,,,2539,,1
+2020,12,Sun,29-Nov,4:05PM,Denver Broncos,New Orleans Saints,,,,,,,,,,2540,,1
+2020,12,Sun,29-Nov,4:05PM,Los Angeles Rams,San Francisco 49ers,,,,,,,,,,2541,,1
+2020,12,Sun,29-Nov,4:25PM,Tampa Bay Buccaneers,Kansas City Chiefs,,,,,,,,,,2542,,1
+2020,12,Sun,29-Nov,8:20PM,Green Bay Packers,Chicago Bears,,,,,,,,,,2543,,1
+2020,12,Mon,30-Nov,8:15PM,Philadelphia Eagles,Seattle Seahawks,,,,,,,,,,2544,,1
+2020,13,Thu,3-Dec,8:20PM,Baltimore Ravens,Dallas Cowboys,,,,,,,,,,2545,,1
+2020,13,Sun,6-Dec,1:00PM,Pittsburgh Steelers,Washington Football Team,,,,,,,,,,2546,,1
+2020,13,Sun,6-Dec,1:00PM,Atlanta Falcons,New Orleans Saints,,,,,,,,,,2547,,1
+2020,13,Sun,6-Dec,1:00PM,Minnesota Vikings,Jacksonville Jaguars,,,,,,,,,,2548,,1
+2020,13,Sun,6-Dec,1:00PM,New York Jets,Las Vegas Raiders,,,,,,,,,,2549,,1
+2020,13,Sun,6-Dec,1:00PM,Tennessee Titans,Cleveland Browns,,,,,,,,,,2550,,1
+2020,13,Sun,6-Dec,1:00PM,Chicago Bears,Detroit Lions,,,,,,,,,,2551,,1
+2020,13,Sun,6-Dec,1:00PM,Miami Dolphins,Cincinnati Bengals,,,,,,,,,,2552,,1
+2020,13,Sun,6-Dec,1:00PM,Houston Texans,Indianapolis Colts,,,,,,,,,,2553,,1
+2020,13,Sun,6-Dec,4:05PM,Seattle Seahawks,New York Giants,,,,,,,,,,2554,,1
+2020,13,Sun,6-Dec,4:05PM,Arizona Cardinals,Los Angeles Rams,,,,,,,,,,2555,,1
+2020,13,Sun,6-Dec,4:25PM,Los Angeles Chargers,New England Patriots,,,,,,,,,,2556,,1
+2020,13,Sun,6-Dec,4:25PM,Green Bay Packers,Philadelphia Eagles,,,,,,,,,,2557,,1
+2020,13,Sun,6-Dec,8:20PM,Kansas City Chiefs,Denver Broncos,,,,,,,,,,2558,,1
+2020,13,Mon,7-Dec,8:15PM,San Francisco 49ers,Buffalo Bills,,,,,,,,,,2559,,1
+2020,14,Thu,10-Dec,8:20PM,Los Angeles Rams,New England Patriots,,,,,,,,,,2560,,1
+2020,14,Sun,13-Dec,1:00PM,Jacksonville Jaguars,Tennessee Titans,,,,,,,,,,2561,,1
+2020,14,Sun,13-Dec,1:00PM,Carolina Panthers,Denver Broncos,,,,,,,,,,2562,,1
+2020,14,Sun,13-Dec,1:00PM,Miami Dolphins,Kansas City Chiefs,,,,,,,,,,2563,,1
+2020,14,Sun,13-Dec,1:00PM,Detroit Lions,Green Bay Packers,,,,,,,,,,2564,,1
+2020,14,Sun,13-Dec,1:00PM,Tampa Bay Buccaneers,Minnesota Vikings,,,,,,,,,,2565,,1
+2020,14,Sun,13-Dec,1:00PM,Cincinnati Bengals,Dallas Cowboys,,,,,,,,,,2566,,1
+2020,14,Sun,13-Dec,1:00PM,New York Giants,Arizona Cardinals,,,,,,,,,,2567,,1
+2020,14,Sun,13-Dec,1:00PM,Chicago Bears,Houston Texans,,,,,,,,,,2568,,1
+2020,14,Sun,13-Dec,4:05PM,Las Vegas Raiders,Indianapolis Colts,,,,,,,,,,2569,,1
+2020,14,Sun,13-Dec,4:05PM,Seattle Seahawks,New York Jets,,,,,,,,,,2570,,1
+2020,14,Sun,13-Dec,4:25PM,San Francisco 49ers,Washington Football Team,,,,,,,,,,2571,,1
+2020,14,Sun,13-Dec,4:25PM,Philadelphia Eagles,New Orleans Saints,,,,,,,,,,2572,,1
+2020,14,Sun,13-Dec,4:25PM,Los Angeles Chargers,Atlanta Falcons,,,,,,,,,,2573,,1
+2020,14,Sun,13-Dec,8:20PM,Buffalo Bills,Pittsburgh Steelers,,,,,,,,,,2574,,1
+2020,14,Mon,14-Dec,8:15PM,Cleveland Browns,Baltimore Ravens,,,,,,,,,,2575,,1
+2020,15,Thu,17-Dec,8:20PM,Las Vegas Raiders,Los Angeles Chargers,,,,,,,,,,2576,,1
+2020,15,Sun,20-Dec,1:00PM,Indianapolis Colts,Houston Texans,,,,,,,,,,2577,,1
+2020,15,Sun,20-Dec,1:00PM,Denver Broncos,Buffalo Bills,,,,,,,,,,2578,,1
+2020,15,Sun,20-Dec,1:00PM,Miami Dolphins,New England Patriots,,,,,,,,,,2579,,1
+2020,15,Sun,20-Dec,1:00PM,Minnesota Vikings,Chicago Bears,,,,,,,,,,2580,,1
+2020,15,Sun,20-Dec,1:00PM,Los Angeles Rams,New York Jets,,,,,,,,,,2581,,1
+2020,15,Sun,20-Dec,1:00PM,Baltimore Ravens,Jacksonville Jaguars,,,,,,,,,,2582,,1
+2020,15,Sun,20-Dec,1:00PM,Atlanta Falcons,Tampa Bay Buccaneers,,,,,,,,,,2583,,1
+2020,15,Sun,20-Dec,1:00PM,Washington Football Team,Seattle Seahawks,,,,,,,,,,2584,,1
+2020,15,Sun,20-Dec,1:00PM,New York Giants,Cleveland Browns,,,,,,,,,,2585,,1
+2020,15,Sun,20-Dec,1:00PM,Green Bay Packers,Carolina Panthers,,,,,,,,,,2586,,1
+2020,15,Sun,20-Dec,1:00PM,Tennessee Titans,Detroit Lions,,,,,,,,,,2587,,1
+2020,15,Sun,20-Dec,4:05PM,Arizona Cardinals,Philadelphia Eagles,,,,,,,,,,2588,,1
+2020,15,Sun,20-Dec,4:25PM,New Orleans Saints,Kansas City Chiefs,,,,,,,,,,2589,,1
+2020,15,Sun,20-Dec,8:20PM,Dallas Cowboys,San Francisco 49ers,,,,,,,,,,2590,,1
+2020,15,Mon,21-Dec,8:15PM,Cincinnati Bengals,Pittsburgh Steelers,,,,,,,,,,2591,,1
+2020,16,Fri,25-Dec,4:30PM,New Orleans Saints,Minnesota Vikings,,,,,,,,,,2592,,1
+2020,16,Sun,27-Dec,1:00AM,Arizona Cardinals,San Francisco 49ers,,,,,,,,,,2593,,1
+2020,16,Sun,27-Dec,1:00PM,Pittsburgh Steelers,Indianapolis Colts,,,,,,,,,,2594,,1
+2020,16,Sun,27-Dec,1:00PM,Los Angeles Chargers,Denver Broncos,,,,,,,,,,2595,,1
+2020,16,Sun,27-Dec,1:00PM,Jacksonville Jaguars,Chicago Bears,,,,,,,,,,2596,,1
+2020,16,Sun,27-Dec,1:00PM,Kansas City Chiefs,Atlanta Falcons,,,,,,,,,,2597,,1
+2020,16,Sun,27-Dec,1:00PM,Detroit Lions,Tampa Bay Buccaneers,,,,,,,,,,2598,,1
+2020,16,Sun,27-Dec,1:00PM,New York Jets,Cleveland Browns,,,,,,,,,,2599,,1
+2020,16,Sun,27-Dec,1:00PM,Baltimore Ravens,New York Giants,,,,,,,,,,2600,,1
+2020,16,Sun,27-Dec,1:00PM,Washington Football Team,Carolina Panthers,,,,,,,,,,2601,,1
+2020,16,Sun,27-Dec,1:00PM,Las Vegas Raiders,Miami Dolphins,,,,,,,,,,2602,,1
+2020,16,Sun,27-Dec,1:00PM,Houston Texans,Cincinnati Bengals,,,,,,,,,,2603,,1
+2020,16,Sun,27-Dec,4:05PM,Seattle Seahawks,Los Angeles Rams,,,,,,,,,,2604,,1
+2020,16,Sun,27-Dec,4:25PM,Dallas Cowboys,Philadelphia Eagles,,,,,,,,,,2605,,1
+2020,16,Sun,27-Dec,8:20PM,Green Bay Packers,Tennessee Titans,,,,,,,,,,2606,,1
+2020,16,Mon,28-Dec,8:15PM,New England Patriots,Buffalo Bills,,,,,,,,,,2607,,1
+2020,17,Sun,3-Jan,1:00PM,Buffalo Bills,Miami Dolphins,,,,,,,,,,2608,,1
+2020,17,Sun,3-Jan,1:00PM,Kansas City Chiefs,Los Angeles Chargers,,,,,,,,,,2609,,1
+2020,17,Sun,3-Jan,1:00PM,Philadelphia Eagles,Washington Football Team,,,,,,,,,,2610,,1
+2020,17,Sun,3-Jan,1:00PM,Carolina Panthers,New Orleans Saints,,,,,,,,,,2611,,1
+2020,17,Sun,3-Jan,1:00PM,Houston Texans,Tennessee Titans,,,,,,,,,,2612,,1
+2020,17,Sun,3-Jan,1:00PM,Chicago Bears,Green Bay Packers,,,,,,,,,,2613,,1
+2020,17,Sun,3-Jan,1:00PM,New England Patriots,New York Jets,,,,,,,,,,2614,,1
+2020,17,Sun,3-Jan,1:00PM,Cincinnati Bengals,Baltimore Ravens,,,,,,,,,,2615,,1
+2020,17,Sun,3-Jan,1:00PM,Indianapolis Colts,Jacksonville Jaguars,,,,,,,,,,2616,,1
+2020,17,Sun,3-Jan,1:00PM,Detroit Lions,Minnesota Vikings,,,,,,,,,,2617,,1
+2020,17,Sun,3-Jan,1:00PM,Tampa Bay Buccaneers,Atlanta Falcons,,,,,,,,,,2618,,1
+2020,17,Sun,3-Jan,1:00PM,New York Giants,Dallas Cowboys,,,,,,,,,,2619,,1
+2020,17,Sun,3-Jan,1:00PM,Cleveland Browns,Pittsburgh Steelers,,,,,,,,,,2620,,1
+2020,17,Sun,3-Jan,4:25PM,Los Angeles Rams,Arizona Cardinals,,,,,,,,,,2621,,1
+2020,17,Sun,3-Jan,4:25PM,Denver Broncos,Las Vegas Raiders,,,,,,,,,,2622,,1
+2020,17,Sun,3-Jan,4:25PM,San Francisco 49ers,Seattle Seahawks,,,,,,,,,,2623,,1
