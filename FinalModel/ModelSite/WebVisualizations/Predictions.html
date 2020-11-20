@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
   <script src="https://d3js.org/d3.v6.min.js"></script>
+  <script src="data.js"></script>
 </head>
 
 <body>
@@ -54,7 +55,7 @@
   <form>
     <div class="row">
       <div class="col">
-        <select type="text" class="form-control form-control-sm" style="margin-bottom: 25px;" placeholder="2020">
+        <select id="YearSelect" type="text" class="form-control form-control-sm" style="margin-bottom: 25px;" placeholder="2020">
           <option>2020</option>
           <option>2019</option>
           <option>2018</option>
@@ -64,7 +65,7 @@
         </select>
       </div>
       <div class="col">
-        <select type="text" class="form-control form-control-sm" style="margin-bottom: 25px;" placeholder="1">
+        <select id="WeekSelect" type="text" class="form-control form-control-sm" style="margin-bottom: 25px;" placeholder="1">
           <option>1</option>
           <option>2</option>
           <option>3</option>
@@ -89,26 +90,10 @@
         </select>
       </div>
       <div class="col">
-        <select type="text" class="form-control form-control-sm" style="margin-bottom: 25px;" placeholder="A1 vs. B">
-          <option>A1 vs. B</option>
-          <option>A2 vs. B</option>
-          <option>A3 vs. B</option>
-          <option>A4 vs. B</option>
-          <option>A5 vs. B</option>
-          <option>A6 vs. B</option>
-          <option>A7 vs. B</option>
-          <option>A8 vs. B</option>
-          <option>A9 vs. B9</option>
-          <option>A vs. B10</option>
-          <option>A vs. B11</option>
-          <option>A vs. B12</option>
-          <option>A vs. B13</option>
-          <option>A vs. B14</option>
-          <option>A vs. B15</option>
-          <option>A vs. B16</option>
+        <select type="text"  id="GameSelect"  class="form-control form-control-sm" style="margin-bottom: 25px;" placeholder="A1 vs. B">
         </select>
       </div>
-      <button type="button" class="btn btn-warning" style="max-height: 40px; max-width: 80px; margin-right: 10px;">Submit</button>
+      <button type="button" id="submitButton" class="btn btn-warning" style="max-height: 40px; max-width: 80px; margin-right: 10px;">Submit</button>
     </div>
   </form>
 </div>
@@ -118,26 +103,26 @@
 <!--/SCORES AND PREDITS-->
 <div class="container" style="background-color: rgba(102,51,153,0.62);">
       <h1 style="color:white">Model Predictions</h1>
-      <p style="color:white" align="center">Click on an image to find a full breakdown of each variable</p>
+      <p style="color:white" align="center"></p>
     <div class="row">
     
-      <div class="col-md-3" style="width: 100%; text-align: center">
-        <h2 style="font-size: large; color:white">Indianapolis Colts</h2>
-        <a href="vis1.html"><img src="Resources/assets/images/colts.png" class="img-fluid" alt="Responsive image" style="margin-bottom: 25px; max-height: 200px; max-width: 200px;" align="center"></img></a>
-        <h3><b style="text-align: center">Model Prediction:</b></h4>
-        <h4><b style="text-align: center">19.75</b></h3>
+      <div class="col-md-6" id="HomeTEAM" style="width: 100%; text-align: center">
+        <h2 id="TeamNameH" style="font-size: large; color:white">Indianapolis Colts</h2>
+        <a href="vis1.html"><img id="HomeImage" class="img-fluid" alt="Responsive image" style="margin-bottom: 25px; max-height: 200px; max-width: 200px;" align="center"></img></a>
+        <h3 ><b style="text-align: center">Model Prediction:</b></h4>
+        <h4  id="ModelScoreH"><b style="text-align: center"></b></h3>
         <br>
         <h3><b style="text-align: center">Actual Score:</b></h4>
-        <h4><b style="text-align: center">21</b></h3>
+        <h4  id="TrueScoreH"><b style="text-align: center"></b></h3>
         <br>
         <h3><b style="text-align: center">Mean Squared Error:</b></h4>
-        <h4><b style="text-align: center">2</b></h3>
+        <h4 id="ErrorH"><b style="text-align: center"></b></h3>
         <br>
-        <img src="Resources/assets/images/uptrend.png" class="img-fluid" alt="Responsive image" style="margin-bottom: 25px; max-height: 100px; max-width: 100px;" align="center"></img>
-      </div>
-      <div class="col-md-3" style="width: 100%; text-align: center;">
+        <!--<img src="Resources/assets/images/uptrend.png" class="img-fluid" alt="Responsive image" style="margin-bottom: 25px; max-height: 100px; max-width: 100px;" align="center"></img>
+        --></div>
+      <!--<div class="col-md-3" id="generalData"style="width: 100%; text-align: center;">
         <h3><b style="text-align: center;color:white;">Date:</b></h4>
-        <h4><b style="text-align: center;color:white;">9/13/2020</b></h3>
+        <h4><b style="text-align: center;color:white;">9/13/2020</b></h3>  src="Resources/assets/images/colts.png"
         <br>
         <h3><b style="text-align: center;color:white;">Time:</b></h4>
         <h4><b style="text-align: center;color:white;">13:00:00 PM</b></h3>
@@ -146,26 +131,26 @@
         <h4><b style="text-align: center;color:white;">13</b></h3>
         <br>
         <h4><b style="text-align: center;color:white;">Week Mean Squared Error:</b></h4>
-        <h4><b style="text-align: center;color:white;">4.55</b></h3>
+        <h4><b style="text-align: center;color:white;">4.55</b></h3>  src="Resources/assets/images/jags.png"
         <br>
         <h4><b style="text-align: center;color:white;">Year Mean Squared Error:</b></h4>
         <h4><b style="text-align: center;color:white;">5.66</b></h3>
         <br>
         <h4><b style="text-align: center;color:white;">Did This Point Improve The Model?</b></h4>
-      </div>
-      <div class="col-md-3" style="width: 100%; text-align: center">
-        <h2 style="font-size: large; color:white"">Jacksonville Jaguars</h2>
-        <a href="vis3.html"><img src="Resources/assets/images/jags.png" class="img-fluid" alt="Responsive image" style="margin-bottom: 25px; max-height: 200px; max-width: 200px;" align="center"></img></a>
+      </div>-->
+      <div class="col-md-6" id="AwayTeam" style="width: 100%; text-align: center">
+        <h2 id="TeamNameA" style="font-size: large; color:white"">Jacksonville Jaguars</h2>
+        <a href="vis3.html"><img id="AwayImage" class="img-fluid" alt="Responsive image" style="margin-bottom: 25px; max-height: 200px; max-width: 200px;" align="center"></img></a>
         <h3><b style="text-align: center">Model Prediction:</b></h4>
-        <h4><b style="text-align: center">13.22</b></h3>
+        <h4 id="ModelScoreA"><b style="text-align: center"></b></h3>
         <br>
         <h3><b style="text-align: center">Actual Score:</b></h4>
-        <h4><b style="text-align: center">24</b></h3>
+        <h4 id="TrueScoreA"><b style="text-align: center"></b></h3>
         <br>
         <h3><b style="text-align: center">Mean Squared Error:</b></h4>
-        <h4><b style="text-align: center">11</b></h3>
+        <h4 id="ErrorA"><b style="text-align: center"></b></h3>
         <br>
-        <img src="Resources/assets/images/downtrend.png" class="img-fluid" alt="Responsive image" style="margin-bottom: 25px; max-height: 100px; max-width: 100px;" align="center"></img>
+        <!--<img src="Resources/assets/images/downtrend.png" class="img-fluid" alt="Responsive image" style="margin-bottom: 25px; max-height: 100px; max-width: 100px;" align="center"></img>-->
       </div>
       <div class="col-md-3" style="width: 100%; text-align: center" id="modelPerformance">
 
@@ -181,103 +166,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script>
-      body = d3.select('#modelPerformance')
-      svg = body.append('svg').attr('height', 135).attr('width', 400)
-      rect = svg.append('rect').attr('width', 100)
-                .attr('height', 100)
-                .attr('x', 50)
-                .attr('y', 20)
-                .attr('rx', 20)
-                .attr('ry', 20)
-                .style('fill', 'red')
-                .style('opacity', 0.7)
-                .attr('stroke', 'black')
-                .attr('stroke-width', 5)
-      text = svg.append('text').text('FPI')
-                .attr('x', 83)
-                .attr('y', 60)
-                .style('font-size', 24)
-                .style('font-weight', 'bold')
-                .attr('fill', 'white')
-      texta = svg.append('text').text('35.5')
-                .attr('x', 78)
-                .attr('y', 90)
-                .style('font-size', 22)
-                .style('font-weight', 'bold')
-                .attr('fill', 'orange')
-      // Model 2
-      svg2 = body.append('svg').attr('height', 135).attr('width', 400)
-      rect2 = svg2.append('rect').attr('width', 100)
-                .attr('height', 100)
-                .attr('x', 50)
-                .attr('y', 20)
-                .attr('rx', 20)
-                .attr('ry', 20)
-                .style('fill', 'red')
-                .style('opacity', 0.7)
-                .attr('stroke', 'black')
-                .attr('stroke-width', 5)
-      text2 = svg2.append('text').text('Deluxe FPI')
-                .attr('x', 60)
-                .attr('y', 60)
-                .style('font-size', 16)
-                .style('font-weight', 'bold')
-                .attr('fill', 'white')
-      text2a = svg2.append('text').text('28.5')
-                .attr('x', 78)
-                .attr('y', 90)
-                .style('font-size', 22)
-                .style('font-weight', 'bold')
-                .attr('fill', 'orange')
-      // Model 3: Pts. and Turnovers
-      svg3 = body.append('svg').attr('height', 135).attr('width', 400)
-      rect3 = svg3.append('rect').attr('width', 100)
-                .attr('height', 100)
-                .attr('x', 50)
-                .attr('y', 20)
-                .attr('rx', 20)
-                .attr('ry', 20)
-                .style('fill', 'green')
-                .style('fill-opacity', 0.78)
-                //.style('opacity', 0.7)
-                .attr('stroke', 'black')
-                .attr('stroke-width', 5)
-      text3 = svg3.append('text').text('YDs + TOs')
-                .attr('x', 64)
-                .attr('y', 60)
-                .style('font-size', 16)
-                .style('font-weight', 'bold')
-                .attr('fill', 'white')
-      svg3.append('text').text('18.6')
-                .attr('x', 78)
-                .attr('y', 90)
-                .style('font-size', 22)
-                .style('font-weight', 'bold')
-                .attr('fill', 'orange')
-      // Model 5: EPA and Success Rate
-      svg4 = body.append('svg').attr('height', 135).attr('width', 400)
-      rect4 = svg4.append('rect').attr('width', 100)
-                .attr('height', 100)
-                .attr('x', 50)
-                .attr('y', 20)
-                .attr('rx', 20)
-                .attr('ry', 20)
-                .style('fill', 'green')
-                .style('opacity', 0.85)
-                .attr('stroke', 'black')
-                .attr('stroke-width', 5)
-      text4 = svg4.append('text').text('EPA and SR')
-                .attr('x', 58)
-                .attr('y', 60)
-                .style('font-size', 16)
-                .style('font-weight', 'bold')
-                .attr('fill', 'white')
-      svg4.append('text').text('22.5')
-                .attr('x', 78)
-                .attr('y', 90)
-                .style('font-size', 22)
-                .style('font-weight', 'bold')
-                .attr('fill', 'white')
     </script>
   </body>
 
