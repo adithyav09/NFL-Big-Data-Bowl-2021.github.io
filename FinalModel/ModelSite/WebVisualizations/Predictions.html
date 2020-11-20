@@ -22,24 +22,24 @@
       <ul class="navbar-nav ml-auto">
         <li class="nav-item active">
           <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-4" data-toggle="dropdown"
-            aria-haspopup="true" aria-expanded="false"><b>Plots</b></a>
+            aria-haspopup="true" aria-expanded="false"><b>Models</b></a>
             <span class="sr-only">(current)</span>
             <div class="dropdown-menu dropdown-menu-right dropdown-info" aria-labelledby="navbarDropdownMenuLink-4">
-              <a class="dropdown-item" href="vis1.html">Maximum Temperature</a>
-              <a class="dropdown-item" href="vis2.html">Humidity</a>
-              <a class="dropdown-item" href="vis3.html">Cloudiness</a>
-              <a class="dropdown-item" href="vis4.html">Wind Speed</a>
+              <a class="dropdown-item" href="vis1ee.html">Ovr. FPI</a>
+              <a class="dropdown-item" href="vis2e.html">Deluxe FPI</a>
+              <a class="dropdown-item" href="vis3e.html">Yards & Turnovers</a>
+              <a class="dropdown-item" href="vis4e.html">EPA and Success Rate</a>
             </div>
           </a>
         </li>
         <li class="nav-item active">
-          <a class="nav-link" id="woosh" href="Comparisons.html">Comparisons</a>
+          <a class="nav-link" id="woosh" href="Comparisonsee.html">Comparisons</a>
         </li>
         <li class="nav-item active">
-          <a class="nav-link" href="Comparisons.html">Game Predictions</a>
+          <a class="nav-link" href="Comparisonsee.html">Game Predictions</a>
         </li>
         <li class="nav-item active">
-          <a class="nav-link" id="woosh" href="Data.html">Data</a>
+          <a class="nav-link" id="woosh" href="Dataee.html">Data</a>
         </li>
         </li>
       </ul>
@@ -50,8 +50,8 @@
 
 <!-- YEAR / Week / Game Selectios-->
 <div class="container" style="background-color: rgba(102,51,153,0.75);">
-  <h1 style="color:white">Model RR</h1>
-  <p style="color:white" align="center">Choose a Year, Week, and Game to Analyze the Models Performance</p>
+  <h1 style="color:white">Overall Model</h1>
+  <p style="color:white" align="center">Choose a Year and Week to Analyze the Models Performance</p>
   <form>
     <div class="row">
       <div class="col">
@@ -65,7 +65,7 @@
         </select>
       </div>
       <div class="col">
-        <select id="WeekSelect" type="text" class="form-control form-control-sm" style="margin-bottom: 25px;" placeholder="1">
+        <select id="WeekSelect" type="text" class="form-control form-control-sm" style="margin-bottom: 25px;" >
           <option>1</option>
           <option>2</option>
           <option>3</option>
@@ -74,7 +74,7 @@
           <option>6</option>
           <option>7</option>
           <option>8</option>
-          <option>9</option>
+          <option selected>9</option>
           <option>10</option>
           <option>11</option>
           <option>12</option>
@@ -89,10 +89,10 @@
           <option>21</option>
         </select>
       </div>
-      <div class="col">
+      <!--<div class="col">
         <select type="text"  id="GameSelect"  class="form-control form-control-sm" style="margin-bottom: 25px;" placeholder="A1 vs. B">
         </select>
-      </div>
+      </div>-->
       <button type="button" id="submitButton" class="btn btn-warning" style="max-height: 40px; max-width: 80px; margin-right: 10px;">Submit</button>
     </div>
   </form>
@@ -101,62 +101,10 @@
 <!-- /.YEAR / Week / Game Selectios-->
 
 <!--/SCORES AND PREDITS-->
-<div class="container" style="background-color: rgba(102,51,153,0.62);">
+<div class="container" id="ScoresTable" style="background-color: rgba(102,51,153,0.62);">
       <h1 style="color:white">Model Predictions</h1>
       <p style="color:white" align="center"></p>
-    <div class="row">
-    
-      <div class="col-md-6" id="HomeTEAM" style="width: 100%; text-align: center">
-        <h2 id="TeamNameH" style="font-size: large; color:white">Indianapolis Colts</h2>
-        <a href="vis1.html"><img id="HomeImage" class="img-fluid" alt="Responsive image" style="margin-bottom: 25px; max-height: 200px; max-width: 200px;" align="center"></img></a>
-        <h3 ><b style="text-align: center">Model Prediction:</b></h4>
-        <h4  id="ModelScoreH"><b style="text-align: center"></b></h3>
-        <br>
-        <h3><b style="text-align: center">Actual Score:</b></h4>
-        <h4  id="TrueScoreH"><b style="text-align: center"></b></h3>
-        <br>
-        <h3><b style="text-align: center">Mean Squared Error:</b></h4>
-        <h4 id="ErrorH"><b style="text-align: center"></b></h3>
-        <br>
-        <!--<img src="Resources/assets/images/uptrend.png" class="img-fluid" alt="Responsive image" style="margin-bottom: 25px; max-height: 100px; max-width: 100px;" align="center"></img>
-        --></div>
-      <!--<div class="col-md-3" id="generalData"style="width: 100%; text-align: center;">
-        <h3><b style="text-align: center;color:white;">Date:</b></h4>
-        <h4><b style="text-align: center;color:white;">9/13/2020</b></h3>  src="Resources/assets/images/colts.png"
-        <br>
-        <h3><b style="text-align: center;color:white;">Time:</b></h4>
-        <h4><b style="text-align: center;color:white;">13:00:00 PM</b></h3>
-        <br>
-        <h4><b style="text-align: center;color:white;">Game Mean Squared Error:</b></h4>
-        <h4><b style="text-align: center;color:white;">13</b></h3>
-        <br>
-        <h4><b style="text-align: center;color:white;">Week Mean Squared Error:</b></h4>
-        <h4><b style="text-align: center;color:white;">4.55</b></h3>  src="Resources/assets/images/jags.png"
-        <br>
-        <h4><b style="text-align: center;color:white;">Year Mean Squared Error:</b></h4>
-        <h4><b style="text-align: center;color:white;">5.66</b></h3>
-        <br>
-        <h4><b style="text-align: center;color:white;">Did This Point Improve The Model?</b></h4>
-      </div>-->
-      <div class="col-md-6" id="AwayTeam" style="width: 100%; text-align: center">
-        <h2 id="TeamNameA" style="font-size: large; color:white"">Jacksonville Jaguars</h2>
-        <a href="vis3.html"><img id="AwayImage" class="img-fluid" alt="Responsive image" style="margin-bottom: 25px; max-height: 200px; max-width: 200px;" align="center"></img></a>
-        <h3><b style="text-align: center">Model Prediction:</b></h4>
-        <h4 id="ModelScoreA"><b style="text-align: center"></b></h3>
-        <br>
-        <h3><b style="text-align: center">Actual Score:</b></h4>
-        <h4 id="TrueScoreA"><b style="text-align: center"></b></h3>
-        <br>
-        <h3><b style="text-align: center">Mean Squared Error:</b></h4>
-        <h4 id="ErrorA"><b style="text-align: center"></b></h3>
-        <br>
-        <!--<img src="Resources/assets/images/downtrend.png" class="img-fluid" alt="Responsive image" style="margin-bottom: 25px; max-height: 100px; max-width: 100px;" align="center"></img>-->
-      </div>
-      <div class="col-md-3" style="width: 100%; text-align: center" id="modelPerformance">
-
-      </div>
-      
-    </div>
+    <div class="row" id="predRow"></div>
 </div>
 
 

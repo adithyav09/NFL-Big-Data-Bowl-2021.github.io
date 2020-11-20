@@ -40,75 +40,184 @@ d3.csv('webData.csv').then(csvData => {
     var weekS = d3.select("#WeekSelect")
     var gameS = d3.select("#GameSelect")
     var data = csvData
+    var gameIDs = [];
 
-    var home_Score = d3.select("#ModelScoreH")
-    var true_h = d3.select("#TrueScoreH")
-    var error_h= d3.select("#ErrorH")
-    var name_h= d3.select("#TeamNameH")
-
-    var away_Score = d3.select("#ModelScoreA")
-    var true_a = d3.select("#TrueScoreA")
-    var error_a= d3.select("#ErrorA")
-    var name_a= d3.select("#TeamNameA")
-    var img_h= document.getElementById("HomeImage")
-    var img_a= document.getElementById("AwayImage")//.src="../template/save.png";
+    for (d of data){
+        gameIDs.push(d.GAMEID)
+    }
 
 
 
+    // var home_Score = d3.select("#ModelScoreH")
+    // var true_h = d3.select("#TrueScoreH")
+    // var error_h= d3.select("#ErrorH")
+    // var name_h= d3.select("#TeamNameH")
+
+    // var away_Score = d3.select("#ModelScoreA")
+    // var true_a = d3.select("#TrueScoreA")
+    // var error_a= d3.select("#ErrorA")
+    // var name_a= d3.select("#TeamNameA")
+    // var img_h= document.getElementById("HomeImage")
+    // var img_a= document.getElementById("AwayImage")//.src="../template/save.png";
 
 
+    let isFirst = false 
 
+
+    var gameid = [];
     var sss = [];
     console.log(typeof(data))
 
     function getGames(year, week){
+        if(isFirst){console.log(gameS.selectAll("select.child"))
+            console.log(typeof(gameS.selectAll("select.child")))
+        }
         for (scores of data){
-            if ((scores.Year == year) & (scores.Week2 == week)) {
 
+            if ((scores.Year == year) & (scores.Week2 == week) ) {
                 var rightWeek = scores.Week_x
                 var otherWeek = scores.Week2
-                gameS.append("option").text(scores.GAMEID)
+                
+                gameS.append("option").text(scores.GAMEID).attr("class", "child")
+                //gameid.push(scores.GAMEID)
 
-    
             }
         }
+        isFirst = true;
     }
 
     console.log(data)
 
     var teamOne = data[0]
     var teamTwo = data[1]
-
+    var row = d3.select("#predRow")
     function display(d1){
+    document.getElementById("predRow").innerHTML="";
+    
     let arre = [];
-    let f = 0
+    let f = 0;
+    let games = d1.length / 2;
     for (var r of d1){
         var m1 = r.Model1_Prediction
         var m2 = r.Model2_Prediction
         var m3 = r.Model3_Prediction
         var m5 = r.Model5_Prediction
+        m5 = parseFloat(m5).toFixed(2)
+        
         var e5 = r.Model5_Error
+        e5 = parseFloat(e5).toFixed(2)
         var real = r.TEAM_POINTS
         var teamName = r.FINAL_TEAM_NAME
-        
-        if (f == 0){
-            error_h.text(e5)
-            real = parseFloat(real)
-            true_h.text(real)
-            home_Score.text(m5)
-            name_h.text(teamName)
-            arre.push([m1, m2, m3, m5])
-            img_h.src = img_obj[teamName][1]
-        
+        let img_N = teamName.replace(/\s/g, "_")
+        row.append("div").enter().attr("class", "col-md-6").attr("id", "HomeTEAM")
+            .style("width", "100%")
+            .style("text-align", "center")
+        if (f % 2 == 0){
+            var column = row.append("div").attr("class", "col-md-6").attr("id", `HomeTEAM${f}`)
+            .style("width", "100%")
+            .style("text-align", "center")
+            
+            column.append("h2")
+            .style("font-size", "36px")
+            .style("color", "white")
+            .attr("id", `HomeTEAM${f}NAME`)
+            .text(teamName)
+            
+
+            column.append("a").attr("id", `link${f}`)
+            .append("img").attr("id", `HOMEIMAGE${f}`).attr("class", "img-fluid").attr("alt", "img-fluid")
+            .style("width", "100%").style("margin-bottom", "25px")
+            .style("max-height", "200px")
+            .style("max-width", "200px")
+            .attr("align", "center").attr("src", `Resources/assets/images/${img_N}.png`)
+
+            column.append("h3").append("b")
+            .attr("text-align", "center")
+            .text("Predicted Score:")
+
+            column.append("h4").append("b")
+            .style("text-align", "center")
+            .text(m5)
+
+            column.append("br")
+
+            column.append("h3").append("b")
+            .attr("text-align", "center")
+            .text("Game Score:")
+
+            column.append("h4").append("b")
+            .style("text-align", "center")
+            .text(real)
+
+            column.append("br")
+
+            column.append("h3").append("b")
+            .attr("text-align", "center")
+            .text("MSE:")
+
+            column.append("h4").append("b")
+            .style("text-align", "center")
+            .text(e5)
+
+            column.append("br")
+            // margin-bottom: 25px; max-height: 200px; max-width: 200px;" align="center"
+
+            
+    
+            
         } else{
-            away_Score.text(m5)
-            true_a.text(real)
-            error_a.text(e5)
-            name_a.text(teamName)
-            img_a.src = img_obj[teamName][1]
+            var column = row.append("div").attr("class", "col-md-6").attr("id", `AwayTEAM${f}`)
+            .style("width", "100%")
+            .style("text-align", "center")
+            
+            column.append("h2")
+            .style("font-size", "36px")
+            .style("color", "white")
+            .attr("id", `AwayTEAM${f}NAME`)
+            .text(teamName)
+            
+
+            column.append("a").attr("id", `link${f}`)
+            .append("img").attr("id", `AwayIMAGE${f}`).attr("class", "img-fluid").attr("alt", "img-fluid")
+            .style("width", "100%").style("margin-bottom", "25px")
+            .style("max-height", "200px")
+            .style("max-width", "200px")
+            .attr("align", "center").attr("src", `Resources/assets/images/${img_N}.png`)
+
+            column.append("h3").append("b")
+            .attr("text-align", "center")
+            .text("Predicted Score:")
+
+            column.append("h4").append("b")
+            .style("text-align", "center")
+            .text(m5)
+
+            column.append("br")
+
+            column.append("h3").append("b")
+            .attr("text-align", "center")
+            .text("Game Score:")
+
+            column.append("h4").append("b")
+            .style("text-align", "center")
+            .text(real)
+
+            column.append("br")
+
+            column.append("h3").append("b")
+            .attr("text-align", "center")
+            .text("MSE:")
+
+            column.append("h4").append("b")
+            .style("text-align", "center")
+            .text(e5)
+
+            column.append("br")
+            
+            //img_a.src = img_obj[teamName][1]
             arre.push([m1, m2, m3, m5])
         }
-        
+
         f += 1
     }
 
@@ -217,32 +326,51 @@ d3.csv('webData.csv').then(csvData => {
     //           .style('font-weight', 'bold')
     //           .attr('fill', 'white')
 }
-    getGames("2020", "1")
+    getGames("2020", "9")
+    var date = Date.now();
+    console.log(date)
+    newGame()
+
+    function newGame(){
+    var wanted_year = d3.select("#YearSelect")._groups[0][0].value
+    var wanted_week = d3.select("#WeekSelect")._groups[0][0].value
+    //var wanted_game = d3.select("#GameSelect")._groups[0][0].value
+    d3.select("#WeekSelect").placeholder =  wanted_week
+    d3.select("#WeekYear").placeholder =  wanted_year
+    var fvalues = [];
+    let hj = {};
+
+
+    for (scores of data){
+        if ((scores.Year == wanted_year) & (scores.Week2 == wanted_week)) {
+            fvalues.push(scores)
+        }
+    }
+
+    fvalues.sort((a, b) => {
+        return a.GAMEID - b.GAMEID
+    })
+
+    console.log("SORTED")
+    console.log(fvalues)
+    display(fvalues)
+    getGames(wanted_year, wanted_week)
+    }
+
+
 
 
     d3.select("#submitButton").on("click", function(event) {
-
+        newGame();
         var wanted_year = d3.select("#YearSelect")._groups[0][0].value
         var wanted_week = d3.select("#WeekSelect")._groups[0][0].value
-        var wanted_game = d3.select("#GameSelect")._groups[0][0].value
-        console.log(wanted_year)
-        console.log(wanted_week)
-        console.log(wanted_game)
-
-        var fvalues = [];
-
-        for (scores of data){
-            if ((scores.Year == wanted_year) & (scores.Week2 == wanted_week) & (scores.GAMEID == wanted_game)) {
-                fvalues.push(scores)
-            }
-        }
-
-        display(fvalues)
         getGames(wanted_year, wanted_week)
+
 
     })
 
     d3.select("#weekSelect").on("change", function(event) {
+
 
         var wanted_year = d3.select("#YearSelect")._groups[0][0].value
         var wanted_week = d3.select("#WeekSelect")._groups[0][0].value
@@ -256,24 +384,10 @@ d3.csv('webData.csv').then(csvData => {
             }
         }
 
+        d3.select(".column-md-6").exit();
+
         getGames(wanted_year, wanted_week)
 
     })
-
-
-  
-    //console.log(data)
-    // get .Model1_Prediction, .Model2_Prediction, .Model3_Prediction .Model5_Prediction
-    
-
-
-
-
-
-
-
-
-
-
 
 })
